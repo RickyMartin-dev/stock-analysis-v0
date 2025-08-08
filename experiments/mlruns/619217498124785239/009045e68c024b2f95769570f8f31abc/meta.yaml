@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ricky/Desktop/Finally_Productive/end-to-end-stockprice-pred/stock-analysis-v0/experiments/mlruns/619217498124785239/009045e68c024b2f95769570f8f31abc/artifacts
+end_time: 1754691254402
+entry_point_name: ''
+experiment_id: '619217498124785239'
+lifecycle_stage: active
+run_id: 009045e68c024b2f95769570f8f31abc
+run_name: learned-jay-523
+run_uuid: 009045e68c024b2f95769570f8f31abc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754691251928
+status: 3
+tags: []
+user_id: ricky

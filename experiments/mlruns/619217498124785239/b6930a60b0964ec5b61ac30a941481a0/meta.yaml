@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ricky/Desktop/Finally_Productive/end-to-end-stockprice-pred/stock-analysis-v0/experiments/mlruns/619217498124785239/b6930a60b0964ec5b61ac30a941481a0/artifacts
+end_time: 1754691357583
+entry_point_name: ''
+experiment_id: '619217498124785239'
+lifecycle_stage: active
+run_id: b6930a60b0964ec5b61ac30a941481a0
+run_name: AAPL-lb14-h64-lr0.003
+run_uuid: b6930a60b0964ec5b61ac30a941481a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754691357161
+status: 3
+tags: []
+user_id: ricky

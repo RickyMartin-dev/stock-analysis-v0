@@ -1,0 +1,11 @@
+[('pre', ColumnTransformer(transformers=[('num', StandardScaler(),
+                                 ['ret_1_lag1', 'ret_1_lag2', 'ret_1_lag3',
+                                  'ret_1_lag4', 'ret_1_lag5', 'ret_1_lag6',
+                                  'ret_1_lag7', 'ret_1_lag8', 'ret_1_lag9',
+                                  'ret_1_lag10', 'ret_1_lag11', 'ret_1_lag12',
+                                  'ret_1_lag13', 'ret_1_lag14', 'ma_5_lag1',
+                                  'ma_5_lag2', 'ma_5_lag3', 'ma_5_lag4',
+                                  'ma_5_lag5', 'ma_5_lag6', 'ma_5_lag7',
+                                  'ma_5_lag8', 'ma_5_lag9', 'ma_5_lag10',
+                                  'ma_5_lag11', 'ma_5_lag12', 'ma_5_lag13',
+                                  'ma_5_lag14', 'ma_10_lag1', 'ma_10_lag2', ...])]))]

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ricky/Desktop/Finally_Productive/end-to-end-stockprice-pred/stock-analysis-v0/experiments/mlruns/619217498124785239/601160a31d904067a9373577753329c4/artifacts
+end_time: 1754691984954
+entry_point_name: ''
+experiment_id: '619217498124785239'
+lifecycle_stage: active
+run_id: 601160a31d904067a9373577753329c4
+run_name: abrasive-shrew-95
+run_uuid: 601160a31d904067a9373577753329c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754691982808
+status: 3
+tags: []
+user_id: ricky
