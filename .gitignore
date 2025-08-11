@@ -205,3 +205,17 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# custom
+artifacts/
+experiments/artifacts
+experiments/artifacts/
+/experiments/artifacts
+/experiments/artifacts/
+.experiments/artifacts/
+experiments/artifacts/AAPL_bundle.tar.gz
+experiments/artifacts/feature_spec.json
+experiments/artifacts/model.pt
+experiments/artifacts/preprocess.pkl
+experiments/artifacts/val_confusion_matrix.png
+experiments/artifacts/val_prob_hist.png
