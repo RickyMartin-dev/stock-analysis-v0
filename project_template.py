@@ -11,6 +11,7 @@ list_of_files = [
     ".env", # purely for local development
     ".github/workflows/.gitkeep",
     "experiments/testing.py", # for testing files if needed
+    "experiments/artifacts/__init__.py", # for testing files if needed
     # "scripts/create_buckets.py", # create proper S3 buckets if need be
     "src/__init__.py", # to import files
     "requirements.txt", # for package information 
