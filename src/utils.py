@@ -12,6 +12,7 @@ logger.addHandler(h)
 
 # define s3 Client
 s3 = boto3.client("s3", region_name=AWS_REGION)
+cw = boto3.client("cloudwatch", region_name=AWS_REGION)
 
 # Read JSON data from S3
 def read_json_s3(bucket: str, key: str) -> Dict[str, Any]:
@@ -37,3 +38,9 @@ class Timer:
         self.t0 = time.time(); return self
     def __exit__(self, *exc):
         self.elapsed = time.time() - self.t0
+
+def put_metric(namespace: str, name: str, value: float, unit: str = "Count", dims: dict | None = None):
+    dims_list = [{"Name": k, "Value": str(v)} for k, v in (dims or {}).items()]
+    cw.put_metric_data(Namespace=namespace, MetricData=[{
+        "MetricName": name, "Dimensions": dims_list, "Value": value, "Unit": unit
+    }])

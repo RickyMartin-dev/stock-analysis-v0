@@ -15,6 +15,7 @@ list_of_files = [
     "requirements.txt", # for package information 
     "Dockerfile.inference",
     "Dockerfile.training",
+    "Dockerfile.promote",
     "tests/__init__.py",
     "tests/__init__.py",
     "src/__init__.py", # to import files
@@ -30,6 +31,7 @@ list_of_files = [
     "src/drift.py", # define drift checks
     "src/inference_lambda.py", # lambda handler for online inference
     "src/train_lambda.py", # lambda handler for scheduled training
+    "src/promote_lambda.py", # lambda handler for promoting latest model
 ]
 
 # Go through list and create folders/files

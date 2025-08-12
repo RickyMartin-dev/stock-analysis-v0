@@ -7,7 +7,7 @@ load_dotenv()
 MLFLOW_TRACKING_URI=os.getenv("MLFLOW_TRACKING_URI")
 MLFLOW_EXPERIMENT = os.getenv("MLFLOW_EXPERIMENT", "stock-analysis-notebook")
 ARTIFACT_LOCATION = os.getenv("ARTIFACT_LOCATION")
-MODEL_PREFIX = os.environ.get('MODEL_PREFIX','models/stock-updown')
+MODEL_PREFIX = os.getenv('MODEL_PREFIX','models/stock-updown')
 
 # AWS Credentials
 AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
