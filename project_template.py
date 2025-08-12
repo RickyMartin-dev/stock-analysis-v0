@@ -12,11 +12,24 @@ list_of_files = [
     ".github/workflows/.gitkeep",
     "experiments/testing.py", # for testing files if needed
     "experiments/artifacts/__init__.py", # for testing files if needed
-    # "scripts/create_buckets.py", # create proper S3 buckets if need be
-    "src/__init__.py", # to import files
     "requirements.txt", # for package information 
-    "Dockerfile",
+    "Dockerfile.inference",
+    "Dockerfile.training",
     "tests/__init__.py",
+    "tests/__init__.py",
+    "src/__init__.py", # to import files
+    "src/artifacts/__init__.py", # to import files
+    "src/config.py", # to import files
+    "src/utils.py", # utilies aka. repeated function
+    "src/mlflow_utils.py", # load in ml flow functionality
+    "src/schemas.py", # schema for access
+    "src/data_extractor.py", # to extract data using yfinance
+    "src/features.py", # to create and manage feature creation/engineering
+    "src/model.py", # define model
+    "src/train.py", # to train
+    "src/drift.py", # define drift checks
+    "src/inference_lambda.py", # lambda handler for online inference
+    "src/train_lambda.py", # lambda handler for scheduled training
 ]
 
 # Go through list and create folders/files

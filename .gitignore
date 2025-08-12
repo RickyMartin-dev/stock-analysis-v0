@@ -219,3 +219,6 @@ experiments/artifacts/model.pt
 experiments/artifacts/preprocess.pkl
 experiments/artifacts/val_confusion_matrix.png
 experiments/artifacts/val_prob_hist.png
+artifacts/
+/artifacts/
+artifacts
