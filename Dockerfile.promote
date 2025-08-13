@@ -9,8 +9,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 WORKDIR /var/task
 
 # Install only what's required for the promotion controller
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.promote.txt ./
+RUN pip install --no-cache-dir -r requirements.promote.txt
 
 # Copy ONLY the modules needed by promote_lambda to minimize size
 # If your src package uses relative imports, ensure __init__.py exists
