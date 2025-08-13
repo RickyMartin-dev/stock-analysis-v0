@@ -1,0 +1,22 @@
+# Lightweight AWS Lambda base for Python 3.11
+FROM public.ecr.aws/lambda/python:3.11
+
+# Keep Python deterministic & quieter at runtime
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+# Workdir where the Lambda Runtime expects code
+WORKDIR /var/task
+
+# Install only what's required for the promotion controller
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy ONLY the modules needed by promote_lambda to minimize size
+# If your src package uses relative imports, ensure __init__.py exists
+COPY src/utils.py ./src/utils.py
+COPY src/promote_lambda.py ./src/promote_lambda.py
+RUN mkdir -p src && [ -f src/__init__.py ] || touch src/__init__.py
+
+# Entrypoint — module.function for the Lambda Runtime Interface
+CMD ["src.promote_lambda.handler"]
